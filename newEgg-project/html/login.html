@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" href="../css/login.css" />
+		<script src="../js/public.js"></script>
+		<script src="../js/cookie.js"></script>
+	</head>
+	<body>
+		<div id="topbar">
+			<ul class="aside left">
+				<li><a href="javascript:;" target="_blank" class="phone">掌上新蛋</a></li>
+				<li><a href="javascript:;" target="_blank" class="bizGroupBuy">企业团购</a></li>
+			</ul>
+			<div class="infor right">
+				<span>晚上好，欢迎来新蛋购物！</span>
+				<ul class="right">
+					<li><a href="javascript:;" target="_blank">我的订单</a></li>
+					<li><a href="javascript:;" target="_blank">我的新蛋<i class="iconfont">&#xe648;</i></a></li>
+					<li><a href="javascript:;" target="_blank" class="p">帮助中心</a></li>
+					<li class="f"><a href="javascript:;" target="_blank">客户服务<i class="iconfont">&#xe648;</i></a>
+						<div id="inner">
+							<div class="info">
+							        <p class="orange"><strong>400-820-4400</strong></p>
+							        <strong>021-67072699</strong>
+							        <p>每天 9:00 - 18:00</p>
+							</div>
+						    <div class="connect_way">
+							    <a href="javascript:;" target="_blank" title="在线咨询"  style="float:left;clear:left;margin-right:4px;"><span>在线咨询</span></a>
+							    <a href="javascript:;" target="_blank"  title="邮件我们" style="float:left;clear:right;"><span>邮件我们</span></a>
+						    </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	    <div id="top">
+	    	<img src="../img/loginimg/login-top.jpg" class="left" />
+	    	<h4 class="left">欢迎登陆</h4>
+	    </div>
+	    <div id="section">
+	    	<div class="content">
+		    	<div class="welcome">
+		    		<h2>登录新蛋</h2>
+		    		<a href="register.html">注册新用户>></a>
+		    	</div>
+		    	<form action="../index.html">
+			    	<div class="uname">
+			    		<img src="../img/loginimg/uname.jpg" alt="" />
+			    		<input type="text" placeholder="用户名/已验证手机或邮箱" id="pname"/>
+			    	</div>
+			    	<div class="uname">
+			    		<img src="../img/loginimg/pwd.jpg" alt="" />
+			    		<input type="password"  id="pwd"/>
+			    	</div>
+			    	<span id="check"></span>
+			    	<p>
+			    		<a href="">账户安全</a>
+			    		<a href="">忘记密码？</a>
+			    	</p>
+			    	<input type="submit" value="立即登录" class="login"/>
+		    	</form>
+	    	    <p class="other">您还可以使用以下合作伙伴的账户登录新蛋网：</p>
+	    	    <fieldset>
+	    	    	<a href="javascript:;">支付宝</a>
+	    	    	<a href="javascript:;">QQ</a>
+	    	    	<a href="javascript:;">微信</a>
+	    	    	<a href="javascript:;">新浪微博</a>
+	    	    	<a href="javascript:;">手机支付</a>
+	    	    	<a href="javascript:;">盛大登录</a>
+	    	    	<a href="javascript:;">迅雷</a>
+	    	    	<a href="javascript:;" class="last-a">莆田政府采购登录</a>
+	    	    </fieldset>
+	    	</div>
+	    </div>
+        <div id="ending">
+	    	<div class="img-ending">
+		    	<img src="../img/firstpage/footer-ending.jpg" alt="" />
+	    	</div>
+	    	<p>新蛋集团网站：
+	    		<a href="">美国新蛋</a>
+	    		<a href="">美国新蛋</a>
+	    		<a href="">美国新蛋</a>
+	    		<a href="">美国新蛋</a>
+	    	</p>
+	    	<p>
+	    		<span>© 2001-2018</span>
+	    		<span>新蛋商贸（上海）有限公司</span>
+	    		<span>版权所有</span>
+	    		<span>沪ICP备:16033615</span>
+	    	</p>
+		</div>
+	</body>
+</html>
+<script>
+	var form=document.getElementsByTagName("form")[0];
+	var uname=getCookie("uname");
+	var upwd=getCookie("upwd");
+	form.onsubmit=function(){
+		if(uname==$id("pname").value && upwd==$id("pwd").value){
+			return true;
+		}else{
+			$id("check").style.background="url(../img/loginimg/icon.png) no-repeat 0 -40px"
+			$id("check").innerHTML="请输入正确的用户名、已验证手机/邮箱或密码。";
+			return false;
+		}
+	}
+	$id("pname").onfocus=function(){
+		$id("pname").style.borderColor="#f60";
+	}
+	$id("pname").onblur=function(){
+		$id("pname").style.borderColor="";
+	}
+	$id("pwd").onfocus=function(){
+		$id("pwd").style.borderColor="#f60";
+	}
+	$id("pwd").onblur=function(){
+		$id("pwd").style.borderColor="";
+	}
+</script>

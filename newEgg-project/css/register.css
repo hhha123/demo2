@@ -1,0 +1,90 @@
+/*content---------------------------------------------------------*/
+#content{
+	height: 575px;
+	background: #f9f9f9;
+}
+#content p{
+	line-height: 30px;
+	text-align: right;
+	margin-right: 160px;
+}
+#content label{
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+}
+#content p a{
+	color: #f60;
+}
+#content .step{
+	width:655px ;
+	height: 30px;
+	background: url(../img/register/register_step.png) no-repeat;
+	margin: 30px auto;
+}
+#content .phone-number,
+#content .yanzheng,
+#content .message,
+#content .btn{
+	margin-bottom: 26px;
+}
+#content .phone-number input,
+#content .yanzheng input,
+#content .message input{
+	width:257px ;
+	height:32px ;
+	border: 1px solid #cfcfcf;
+}
+#content .yanzheng input,
+#content .message input{
+	width: 130px;
+}
+#content .yanzheng span,
+#content .message span{
+	display: inline-block;
+	width: 107px;
+	height: 32px;
+	margin-left: 20px;
+	border: 1px solid #868686;
+}
+#content .yanzheng #dj{
+	display: inline-block;
+    width: 107px;
+	height: 32px;
+	background: #pink;
+	line-height: 32px;
+	cursor: pointer;
+}
+#content .yanzheng span{
+	background: url(../img/register/1.png) no-repeat lightskyblue;
+	border-color: #f60;
+	text-align: center;
+	line-height: 32px;
+	font-size: 24px;
+	font-style: italic;
+	color: #d74c35;
+}
+#content .message span{
+	text-align: center;
+	line-height: 32px;
+	cursor: pointer;
+}
+#content .btn{
+	margin-top: 30px;
+	color: #fff;
+	width:257px ;
+	height:32px ;
+	background: #f60;
+	border-radius:4px ;
+	margin-left: 72px;
+}
+#content form{
+	width: 500px;
+	height: 217px;
+	margin: auto;
+}
+#check,#check1{
+	display:inline-block;
+	color: #f60;
+	padding-left: 16px;
+}

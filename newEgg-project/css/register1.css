@@ -1,0 +1,62 @@
+/*content---------------------------------------------------------*/
+#content{
+	height: 575px;
+	background: #f9f9f9;
+}
+#content p{
+	line-height: 30px;
+	text-align: right;
+	margin-right: 160px;
+}
+#content label{
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+}
+#content p a{
+	color: #f60;
+}
+#content .step{
+	width:655px ;
+	height: 30px;
+	background: url(../img/register/register_step.png) no-repeat 0 -76px;
+	margin: 30px auto;
+}
+#content .pwd,
+#content .qpwd,
+#content .btn{
+	margin-bottom: 26px;
+}
+#content .pwd input,
+#content .qpwd input{
+	width:257px ;
+	height:32px ;
+	border: 1px solid #cfcfcf;
+}
+#content .pwd .mima span{
+	display: inline-block;
+	width: 50px;
+	height: 10px;
+	border: 1px solid #f60;
+}
+#content .btn{
+	color: #fff;
+	width:257px ;
+	height:32px ;
+	background: #f60;
+	border-radius:4px ;
+	margin-left: 62px;
+}
+#content .checkbox span{
+	color: #f60;
+}
+#content form{
+	width: 460px;
+	height: 217px;
+	margin: auto;
+}
+#check,#check1{
+	display:inline-block;
+	color: #f60;
+	padding-left: 16px;
+}

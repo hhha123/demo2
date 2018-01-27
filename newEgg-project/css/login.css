@@ -1,0 +1,91 @@
+/*section----------------------------------------------------------------*/
+#section{
+	width: 1262px;
+	height: 480px;
+	background: url(../img/loginimg/bj.jpg) no-repeat;
+	margin-bottom: 55px;
+	position: relative;
+}
+#section .content{
+	position: absolute;
+	right: 115px;
+	bottom:45px;
+	width: 360px;
+	height: 390px;
+	background: #fff;
+	padding: 0 20px 10px 30px;
+}
+.content .welcome{
+	display: flex;
+	justify-content: space-between;
+}
+.content .welcome h2{
+	line-height: 64px;
+	color: #333333;
+}
+.content .welcome a{
+	line-height: 64px;
+}
+.content .uname{
+	width: 285px;
+	height: 33px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+.content .uname input{
+	width: 250px;
+	height: 30px;
+	border: 1px solid #CFCFCF;
+	text-indent: 5px;
+}
+#check{
+	display:block;
+	color: #f60;
+	padding-left: 16px;
+}
+.content form p{
+	line-height: 35px;
+	display: flex;
+	justify-content: space-between;
+}
+.content form .login{
+	width: 284px;
+	height: 30px;
+	background: #f60;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 4px;
+	color: #fff;
+}
+.content .other{
+	margin-top: 20px;
+	line-height: 33px;
+}
+.content fieldset a{
+	display: inline-block;
+	height: 33px;
+	line-height: 33px;
+	padding-left: 30px;
+	background: url(../img/loginimg/qq.png) no-repeat;
+}
+.content fieldset a:nth-child(1){
+	background-position:0 0 ;
+}
+.content fieldset a:nth-child(2){
+	background-position:0 -45px ;
+}
+.content fieldset a:nth-child(3){
+	background-position: 0 -96px;
+}
+.content fieldset a:nth-child(4){
+	background-position:0 -129px ;
+}
+.content fieldset a:nth-child(5){
+	background-position:0 -162px ;
+}
+.content fieldset a.last-a{
+	line-height: 15px;
+	padding-left: 20px;
+	background: url(../img/loginimg/logo.gif) no-repeat;
+}

@@ -1,0 +1,41 @@
+/*content---------------------------------------------------------*/
+#content{
+	height: 575px;
+	background: #f9f9f9;
+}
+#content p{
+	line-height: 30px;
+	text-align: right;
+	margin-right: 160px;
+}
+#content p a{
+	color: #f60;
+}
+#content .step{
+	width:655px ;
+	height: 30px;
+	background: url(../img/register/register_step.png) no-repeat 0 -150px;
+	margin: 30px auto;
+}
+#content .success{
+	width:540px ;
+	height:230px ;
+	margin: auto;
+	margin-left: 350px;
+}
+#content .success h3{
+	font-size:30px ;
+	line-height: 50px;
+}
+#content .success h5{
+	margin-left: 30px;
+	color: #f60;
+	font-size: 14px;
+	line-height: 20px;
+}
+#content img{
+	display: block;
+	position: fixed;
+	right: 10%;
+	top:25%;
+}
