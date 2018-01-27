@@ -32,6 +32,12 @@
 	width:257px ;
 	height:32px ;
 	border: 1px solid #cfcfcf;
+	padding: 10px;
+}
+#content .pwd input:focus,
+#content .qpwd input:focus{
+	outline: 1px solid #f60;
+	border: none;
 }
 #content .pwd .mima span{
 	display: inline-block;

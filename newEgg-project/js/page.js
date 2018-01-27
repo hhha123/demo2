@@ -38,3 +38,31 @@ $(".bigImage").css({
 			      "top" : -y*800/450
 		})
 })
+//吸顶效果
+$(window).scroll(function(){
+	var sTop=$(document).scrollTop();
+	if(sTop>200){
+		$("#xiding").css({"position":"fixed","top":0,
+		                  "background":"#606982"
+		                  ,"z-index":30});
+		$("#xiding a").css("color","#fff");
+		$("#xiding .active").css("color","");
+		$("#compare").html("<span>加入购物车</span>")
+	}else{
+	  	$("#xiding").css({"position":"static","background":""});
+	  	$("#xiding a").css("color","");
+	  	$("#compare").html(`<input type="checkbox" /><label>将商品加入对比</label>`);
+	 }
+})
+//购物数量加减
+$("#count-number .count1").click(function(){
+	var sign=$(this).data("number");
+	var count=$(this).parent().find(".count2").html();
+	if(count==1 && sign==-1){
+			return;
+	}else{
+	    sign==1 ? count++ : count--;
+	}
+	$(this).parent().find(".count2").html(count);
+})
+

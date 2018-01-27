@@ -25,6 +25,7 @@
 }
 .content .welcome a{
 	line-height: 64px;
+	color: #0037B9;
 }
 .content .uname{
 	width: 285px;
@@ -48,6 +49,9 @@
 	line-height: 35px;
 	display: flex;
 	justify-content: space-between;
+}
+.content form p a{
+	color: #0037B9;
 }
 .content form .login{
 	width: 284px;

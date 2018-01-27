@@ -41,6 +41,8 @@
 	border: 1px solid #bfbfbf;
 }
 #main .nav-top .detail-nav{
+	height: 46px;
+	width: 100%;
 }
 .detail-nav a{
 	display: inline-block;
@@ -56,6 +58,15 @@
 	background: #fff;
 	border-top: 3px solid #f60;
 	color: #000;
+}
+#compare span{
+	display: inline-block;
+	background: url(../img/page/shopcar.jpg) #f46216 no-repeat;
+	width: 145px;
+	height: 46px;
+	margin-right: 80px;
+	color: #fff;
+	overflow: hidden;
 }
 .shop-compare{
 	height: 45px;
@@ -162,8 +173,16 @@
 	line-height: 40px;
 	display: block;
 }
-#con-center .goods-id li.banimg{
-	line-height: 66px;
+#con-center .goods-id li.banimg1{
+	height: 40px;
+}
+.goods-id li.banimg1 span{
+	display:block;
+	width:60px ;
+	height: 20px;
+}
+.goods-id li.banimg1 img{
+	display:block;
 }
 .goods-id li .body-phone,
 .goods-id li .body-phone1{
@@ -208,27 +227,85 @@
 .goods-id li em{
 	color: #008000;
 }
-#con-center input{
+#con-center .goods-btns{
+	width: 485px;
+	height: 135px;
+	background: #f0f0f0;
+	padding: 18px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.goods-btns input{
 	width: 214px;
 	height: 47px;
-	background:#ff6600 ;
 	text-align: center;
 	line-height:47px ;
 	color: #fff;
-	margin-top: 50px;
+	font-size: 16px;
 }
-#con-center input.color{
+.goods-btns input.color{
 	background: #1c429a;
+}
+.goods-btns .like-goods{
+	margin-top: 20px;
+}
+.goods-btns .like-goods .add{
+	display: inline-block;
+	width: 82px;
+	height: 32px;
+	background: #fff;
+	border: 1px solid #bfbfbf;
+	margin-right: 20px;
+	line-height: 32px;
+	text-align: center;
+}
+.goods-btns .like-goods .like{
+	padding-left: 50px;
+	background: url(../img/page/logo-small.png) no-repeat -154px -414px;
+}
+.like-goods .share-goods{
+	width: 156px;
+	height: 33px;
+	border: 1px solid #bfbfbf;
+	background: #fff;
+	display: flex;
+	justify-content: space-around;
+}
+.like-goods .share-goods a{
+	display:inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/loginimg/qq.png) no-repeat;
+}
+.like-goods .share-goods a:nth-child(2){
+	background-position:0 -45px ;
+}
+.like-goods .share-goods a:nth-child(3){
+	background-position:0 -99px ;
+}
+.like-goods .share-goods a:nth-child(4){
+	background-position:0 -129px ;
+}
+#shopcar{
+	background: url(../img/page/shopcar.jpg) #f46216 no-repeat;
 }
 #con-right{
 	width: 220px;
 	height: 600px;
+	padding-left: 15px;
 }
 #con-right p,
 #con-right .newegg{
 	border-bottom: 1px solid #ccc;
+	height: 44px;
+}
+#con-right .newegg{
+	height: 80px;
+	padding-top: 10px;
 }
 #con-right p a{
+	margin-top: 30px;
+	margin-left: 10px;
 	display: block;
 	color: #039;
 	width: 80px;
@@ -248,4 +325,30 @@
 	height: 19px;
 	width: 92px;
 	background: url(../img/page/logo-small.png) no-repeat 1px 0;
+}
+#con-right .newegg .show{
+	display: block;
+	line-height: 40px;
+}
+#con-right figure{
+	width: 100px;
+	height: 80px;
+	margin :30px auto;
+}
+#con-right figure a{
+	display: inline-block;
+	width: 100px;
+	height: 80px;
+	background: url(../img/page/erweima.jpg) no-repeat;
+}
+#con-right figure a:hover{
+	
+	width: 170px;
+	height: 200px;
+	background: url(../img/page/erweima2.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#con-right figure span{
+	display: block;
+	margin-top: 10px;
 }

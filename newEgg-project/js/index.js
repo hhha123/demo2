@@ -111,7 +111,7 @@ function wrapThree(){
 					if(i<arr.length){
 						str+=`<li>
 								<img src="${arr[i].src}" alt="" />
-								<p><a href="javascript:;">${arr[i].name}</a></p>
+								<p><a href="html/page.html">${arr[i].name}</a></p>
 								<p class="money-color">${arr[i].price}</p>
 						      </li>`;
 					}
@@ -161,7 +161,7 @@ function wrapFour(){
 					if(i<arr.length){
 						str+=`<li>
 								<img src="${arr[i].src}" alt="" />
-								<p><a href="javascript:;">${arr[i].name}</a></p>
+								<p><a href="html/page.html">${arr[i].name}</a></p>
 								<p class="money-color">${arr[i].price}<span>抢购</span></p>
 						      </li>`;
 					}
@@ -282,3 +282,19 @@ function wrapTen(){
     })
 }
 wrapTen();
+//搜索框   跨域请求数据
+    var oTxt=document.getElementById("txt");
+	var oUl=document.getElementById("search-text");
+	oTxt.onkeyup=function(){
+		var sc=document.createElement("script");
+		sc.src="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+this.value+"&cb=fn";
+		document.body.appendChild(sc);
+	}
+	function fn(msg){
+		var arr=msg.s;
+		var str="";
+		for(var i=0; i<arr.length; i++){
+			str+=`<li><a href="http://www.baidu.com/s?wd=${arr[i]}">${arr[i]}</a></li>`;
+		}
+		oUl.innerHTML=str;
+	}

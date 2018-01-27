@@ -31,9 +31,16 @@
 #content .phone-number input,
 #content .yanzheng input,
 #content .message input{
+	padding-left: 10px;
 	width:257px ;
 	height:32px ;
 	border: 1px solid #cfcfcf;
+}
+#content .phone-number input:focus,
+#content .yanzheng input:focus,
+#content .message input:focus{
+	outline: 1px solid #f60;
+	border: none;
 }
 #content .yanzheng input,
 #content .message input{
@@ -79,9 +86,9 @@
 	margin-left: 72px;
 }
 #content form{
-	width: 500px;
+	width: 520px;
 	height: 217px;
-	margin: auto;
+	margin-left: 450px;
 }
 #check,#check1{
 	display:inline-block;

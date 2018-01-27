@@ -49,16 +49,16 @@
 		    	<form action="../index.html">
 			    	<div class="uname">
 			    		<img src="../img/loginimg/uname.jpg" alt="" />
-			    		<input type="text" placeholder="用户名/已验证手机或邮箱" id="pname"/>
+			    		<input type="text" placeholder="用户名/已验证手机或邮箱" id="pname"/><!-- required="required"-->
 			    	</div>
 			    	<div class="uname">
 			    		<img src="../img/loginimg/pwd.jpg" alt="" />
-			    		<input type="password"  id="pwd"/>
+			    		<input type="password"  id="pwd" required="required"/>
 			    	</div>
 			    	<span id="check"></span>
 			    	<p>
-			    		<a href="">账户安全</a>
-			    		<a href="">忘记密码？</a>
+			    		<a href="#">账户安全</a>
+			    		<a href="#">忘记密码？</a>
 			    	</p>
 			    	<input type="submit" value="立即登录" class="login"/>
 		    	</form>
@@ -96,12 +96,14 @@
 </html>
 <script>
 	var form=document.getElementsByTagName("form")[0];
-	var uname=getCookie("uname");
-	var upwd=getCookie("upwd");
+	var arr=getCookie("userlist");
 	form.onsubmit=function(){
-		if(uname==$id("pname").value && upwd==$id("pwd").value){
-			return true;
-		}else{
+		for(var i=0; i<arr.length; i++){
+			if(arr[i].uname==$id("pname").value && arr[i].upwd==$id("pwd").value){
+				return true;
+			}
+		}
+		if(i==arr.length){
 			$id("check").style.background="url(../img/loginimg/icon.png) no-repeat 0 -40px"
 			$id("check").innerHTML="请输入正确的用户名、已验证手机/邮箱或密码。";
 			return false;

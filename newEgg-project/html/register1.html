@@ -41,7 +41,7 @@
 	    	<h4 class="left">新用户注册</h4>
 	    </div>
 	    <div id="content">
-	    	<p>已是新蛋会员 现在<span>登录</span></p>
+	    	<p>已是新蛋会员 现在<a href="login.html">登录</a></p>
 	    	<div class="step"></div>
 	    	<form action="register2.html">
 		    	<div class="pwd">
@@ -91,7 +91,26 @@
 	var form=document.getElementsByTagName("form")[0];
 	 form.onsubmit=function(){
 	 	if( flagPwd && flagQpwd && $id("chose-check").checked ){
-	 		setCookie("upwd",JSON.stringify($id("login-pwd").value));
+	 		var arr=[];
+	 		var flag=true;
+	 		var pname=getCookie("uname");
+	 		var json={
+	 			uname : pname,
+	 			upwd : $id("login-pwd").value
+	 		}
+	 		arr=getCookie("userlist");
+	 		if(arr.length!=0){
+	 			for(var i=0; i<arr.length; i++){
+			 		if(arr[i].uname == json.uname && arr[i].upwd == json.upwd){
+			 			flag=false;
+			 			break;
+			 		}
+			 	}
+	 		}
+		 	if(flag){
+				arr.push(json);
+			}
+		 	setCookie("userlist",JSON.stringify(arr));
 	 		return true;
 	 	}else{
 	 		return false;
@@ -114,7 +133,7 @@
 	 }
 	 var flagQpwd=null;
 	 $id("q-pwd").onblur=function(){
-	 	 if($id("login-pwd").value!=$id("q-pwd").value){
+	 	 if($id("login-pwd").value!=$id("q-pwd").value || $id("login-pwd").value==""){
 	 	 	$id("check1").innerHTML="密码不一致";
 	 	 	$id("check1").style.background="url(../img/loginimg/icon.png) no-repeat 0 -40px"
 	 	 	flagQpwd=false;

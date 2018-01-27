@@ -611,7 +611,7 @@
 			    		</ul>
 			    	</div>
 	    		</div>
-	    	    <div class="detail-nav">
+	    	    <div class="detail-nav" id="xiding">
 	    	    	<div class="left">
 		    	    	<a href="javascript:;" class="active">商品详情</a>
 		    	    	<a href="javascript:;">用户评论（56）</a>
@@ -619,7 +619,7 @@
 		    	    	<a href="javascript:;">售后服务</a>
 		    	    	<a href="javascript:;">商品咨询</a>
 	    	    	</div>
-	    	    	<div class="right shop-compare">
+	    	    	<div class="right shop-compare" id="compare">
 		    	    	<input type="checkbox" />
 		    	    	<label>将商品加入对比</label>
 	    	    	</div>
@@ -654,8 +654,8 @@
 	                <ul class="goods-id">
 	                	<li>品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌：<a href="javascript:;">Apple 苹果</a></li>
 	                	<li>产品型号：<a href="javascript:;">iPhone X (A1865) 64GB 深空灰色</a></li>
-	                	<li class="banimg">新&nbsp;&nbsp;蛋&nbsp;&nbsp;价：<a href="javascript:;"><img src="../img/page/price.jpg" alt="" /></a></li>
-	                	<li class="banimg">商品支持：<a href="javascript:;"><img src="../img/page/logo.jpg" alt="" /></a></li>
+	                	<li class="banimg1"><span class="left">新&nbsp;&nbsp;蛋&nbsp;&nbsp;价：</span><img class="left" src="../img/page/price.jpg" alt="" /></li>
+	                	<li class="banimg"><span>商品支持：</span><img src="../img/page/logo.jpg" alt="" /></li>
 	                	<li>机身内存：
 	                	   <a href="javascript:;">
 	                		 <span class="body-phone">64G<s></s></span>
@@ -667,31 +667,145 @@
 	                			<span class="body-phone">银色<s></s></span>
 	                		</a></li>
 	                	<li>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：
-	                		<a href="javascript:;">
-	                			<span class="count1">-</span>
+	                		<a href="javascript:;" id="count-number">
+	                			<span class="count1" data-number="-1">-</span>
 	                			<span class="count2">1</span>
-	                			<span class="count1">+</span>		
+	                			<span class="count1" data-number="1">+</span>		
 	                			<em>库存：接受预定(需2－3个工作日备货)</em>
 	                		</a>
 	                	</li>
 	                </ul>
-	                <input type="button" value="立即购买" class="color"/>
-	                <input type="button" value="加入购物车"/>
+	                <div class="goods-btns">
+		                <input type="button" value="立即购买" class="color"/>
+		                <input type="button" value="加入购物车" id="shopcar"/>
+		                <div class="like-goods">
+		                	<span class="add left">加入收藏夹</span>
+		                	<span class="add like left">15</span>
+		                	<p class="share-goods left">
+		                		<a href="#"></a>
+		                		<a href="#"></a>
+		                		<a href="#"></a>
+		                		<a href="#"></a>
+		                	</p>
+		                </div>
+	                </div>
 	            </div>
 	            <div id="con-right">
 	            	<p><a href="#">降价通知</a></p>
 	            	<div class="newegg">
 	            		<strong>4.8</strong>
-	            		<a href="#" class="egg-5"></a>
-	            		<a href="#" class="show">已有56人评论</a>
+	            		<a href="javascript:;" class="egg-5"></a>
+	            		<a href="javascript:;" class="show">已有56人评论</a>
 	            	</div>
 	            	<figure>
-	            		<img src="../img/page/erweima.jpg" alt="" />
+	            		<a></a>
 	            		<span>转到手机上看</span>
 	            	</figure>
 	            </div>
 	        </div>
 	    </div>
+	    <div class="img-infor" style="padding-left: 200px;">
+	    	<img src="../img/page/infor-01.jpg" alt="" />
+	    	<img src="../img/page/infor-02.jpg" alt="" />
+	    	<img src="../img/page/infor-03.jpg" alt="" />
+	    	<img src="../img/page/infor-04.jpg" alt="" />
+	    	<img src="../img/page/infor-05.jpg" alt="" />
+	    </div>
+	    <div id="footer">
+			<div class="footer-top">
+				<a href="javascript:;" target="_blank"><img src="../img/firstpage/footer-top1.jpg" alt="" /></a>
+				<a href="javascript:;" target="_blank"><img src="../img/firstpage/footer-top2.jpg" alt="" /></a>
+				<a href="javascript:;" target="_blank"><img src="../img/firstpage/footer-top3.jpg" alt="" /></a>
+			</div>
+		    <div class="footer-center">
+		    	<div class="ewm">
+		    		<img  class="left" src="../img/firstpage/ewm1.jpg" alt="" />
+		    		<div class="left egg-ewm">
+		    			<h5>掌上新蛋</h5>
+		    			<p>手机扫描二维码</p>
+		    			<p>免费下载新蛋商城</p>
+		    		</div>
+		    	</div>
+		    	<div class="ewm">
+		    		<img  class="left" src="../img/firstpage/ewm2.jpg" alt="" />
+		    		<div class="left egg-ewm">
+		    			<h5>新蛋微信公众号</h5>
+		    			<p>微信扫描二维码</p>
+		    			<p>免费下载新蛋商城</p>
+		    		</div>
+		    	</div>
+		    	<div class="response">
+		    		<div class="email">
+		    			<img src="../img/firstpage/letter.jpg" alt="" class="left"/>
+		    			<h5>订阅新蛋优惠信息</h5>
+		    			<p>
+		    				<span>分类订阅 >></span>
+		    				<span>咨询导购 >></span>
+		    			</p>
+		    		</div>
+		    		<input type="text" value="输入email地址"/>
+		    		<em class="color-dyue">订阅</em>
+		    	</div>
+		    	<div class="about-us">
+		    		<h5>关注我们:</h5>
+		    		<img src="../img/firstpage/aboutus.jpg" alt="" />
+		    	</div>
+		    </div>
+		    <div class="footer-bottom">
+		    	<ul>
+		    		<h3><img src="../img/firstpage/end1.jpg" alt="" />新手上路</h3>
+		    		<li><a href="javascript:;">支付常见问题</a></li>
+		    		<li><a href="javascript:;">支付常见问题</a></li>
+		    		<li><a href="javascript:;">发票须知</a></li>
+		    		<li><a href="javascript:;">免运费政策</a></li>
+		    		<li><a href="javascript:;">签收验货流程</a></li>
+		    		<li><a href="javascript:;">用户评论/咨询</a></li>
+		    		<li><a href="javascript:;">大件商品订购流程</a></li>
+		    	</ul>
+		    	<ul>
+		    		<h3><img src="../img/firstpage/end2.jpg" alt="" />新手上路</h3>
+		    		<li><a href="javascript:;">支付常见问题</a></li>
+		    		<li><a href="javascript:;">支付常见问题</a></li>
+		    		<li><a href="javascript:;">发票须知</a></li>
+		    	</ul>
+		    	<ul>
+		    		<h3><img src="../img/firstpage/end3.jpg" alt="" />新手上路</h3>
+		    		<li><a href="javascript:;">支付常见问题</a></li>
+		    		<li><a href="javascript:;">支付常见问题</a></li>
+		    	</ul>
+		    	<ul>
+		    		<h3><img src="../img/firstpage/end4.jpg" alt="" />新手上路</h3>
+		    		<li><a href="javascript:;">支付常见问题</a></li>
+		    		<li><a href="javascript:;">支付常见问题</a></li>
+		    		<li><a href="javascript:;">发票须知</a></li>
+		    		<li><a href="javascript:;">支付常见问题</a></li>
+		    		<li><a href="javascript:;">发票须知</a></li>
+		    	</ul>
+		    	<ul class="last">
+		    		<h3><img src="../img/firstpage/end1.jpg" alt="" />新手上路</h3>
+		    		<li><a href="javascript:;">支付常见问题</a></li>
+		    		<li><a href="javascript:;">支付常见问题</a></li>
+		    	</ul>
+		    </div>
+		    
+		</div>
+	    <div id="ending">
+	    	<div class="img-ending">
+		    	<img src="../img/firstpage/footer-ending.jpg" alt="" />
+	    	</div>
+	    	<p>新蛋集团网站：
+	    		<a href="">美国新蛋</a>
+	    		<a href="">美国新蛋</a>
+	    		<a href="">美国新蛋</a>
+	    		<a href="">美国新蛋</a>
+	    	</p>
+	    	<p>
+	    		<span>© 2001-2018</span>
+	    		<span>新蛋商贸（上海）有限公司</span>
+	    		<span>版权所有</span>
+	    		<span>沪ICP备:16033615</span>
+	    	</p>
+		</div>
 	</body>
 </html>
 <script src="../js/jquery-1.11.1.js"></script>

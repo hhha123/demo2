@@ -29,9 +29,11 @@
 }
 #content .success h5{
 	margin-left: 30px;
-	color: #f60;
 	font-size: 14px;
 	line-height: 20px;
+}
+#content .success a{
+	color: #f60;
 }
 #content img{
 	display: block;
