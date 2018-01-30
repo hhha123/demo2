@@ -66,3 +66,22 @@ $("#count-number .count1").click(function(){
 	$(this).parent().find(".count2").html(count);
 })
 
+//时间----------------------------------------------------
+function nowTime(){
+	var d=new Date();
+	var hour=d.getHours();
+	if(hour<5){
+		$("#nowtime").html("凌晨好");
+	}else if(hour>=5 && hour<=8){
+		$("#nowtime").html("早上好");
+	}else if(hour>=9 && hour<=11){
+		$("#nowtime").html("上午好");
+	}else if(hour == 12){
+		$("#nowtime").html("中午好");
+	}else if(hour>=13 && hour<=18){
+		$("#nowtime").html("下午好");
+	}else{
+		$("#nowtime").html("晚上好");
+	}
+}
+nowTime();

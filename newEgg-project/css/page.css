@@ -92,6 +92,8 @@
 			top:450px;
 			left:0;
 			width:450px;
+			display: flex;
+			justify-content: space-around;
 }
 #con-left li {
             float: left;	 
@@ -114,6 +116,7 @@
 #con-left #big{
 				width:500px;
 				height:500px;
+				background: #fff;
 				border:1px solid #ccc;
 				overflow:hidden;
 				position:absolute;
@@ -149,6 +152,7 @@
 			height: 450px;
 			background: gray;
 			opacity:0.4 ;
+			display: none;
 		}	
 #con-center{
 	padding-top: 30px;
@@ -243,6 +247,10 @@
 	color: #fff;
 	font-size: 16px;
 }
+.goods-btns input:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
 .goods-btns input.color{
 	background: #1c429a;
 }
@@ -258,6 +266,7 @@
 	margin-right: 20px;
 	line-height: 32px;
 	text-align: center;
+	cursor: pointer;
 }
 .goods-btns .like-goods .like{
 	padding-left: 50px;

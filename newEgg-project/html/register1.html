@@ -15,7 +15,7 @@
 				<li><a href="javascript:;" target="_blank" class="bizGroupBuy">企业团购</a></li>
 			</ul>
 			<div class="infor right">
-				<span>晚上好，欢迎来新蛋购物！</span>
+				<span id="nowtime">晚上好</span>，欢迎来新蛋购物！
 				<ul class="right">
 					<li><a href="javascript:;" target="_blank">我的订单</a></li>
 					<li><a href="javascript:;" target="_blank">我的新蛋<i class="iconfont">&#xe648;</i></a></li>
@@ -175,4 +175,22 @@
 	 		$id("mm2").style.background="#f60";
 	 	}
 	 }
+function nowTime(){
+		var d=new Date();
+		var hour=d.getHours();
+		if(hour<5){
+			$id("nowtime").innerHTML="凌晨好";
+		}else if(hour>=5 && hour<=8){
+			$id("nowtime").innerHTML="早上好";
+		}else if(hour>=9 && hour<=11){
+			$id("nowtime").innerHTML="上午好";
+		}else if(hour == 12){
+			$id("nowtime").innerHTML="中午好";
+		}else if(hour>=13 && hour<=18){
+			$id("nowtime").innerHTML="下午好";
+		}else{
+			$id("nowtime").innerHTML="晚上好";
+		}
+}
+nowTime();
 </script>

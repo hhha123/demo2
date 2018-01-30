@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/shopcar.css"/>
+	</head>
+	<body>
+		<div id="header-wrapper">
+			<div class="header">
+				<div class="logo left"></div>
+				<div class="infor right">
+					<span class="username left">注册&ensp; | &ensp;登录</span>
+					<span class="left">&ensp;&ensp;下午好,欢迎来新蛋购物！</span>
+					<a href="#" class="left quit">安全退出</a>
+					<img src="../img/shoppcar/contact.jpg" alt="" class="left"/>
+					<p>江浙沪部分地区79元包邮，全国部分地区199元包邮。<em>查看详情</em></p>
+				</div>
+			</div>
+			<div class="step">
+				<div class="stepmark s1">
+					<span class="step-light"></span>
+					<p>购物车</p>
+				</div>
+				<div class="stepmark s2">
+					<span class="step-gray"></span>
+					<p>确认订单</p>
+				</div>
+				<div class="stepmark s3">
+					<span class="step-gray"></span>
+					<p>提交成功</p>
+				</div>
+			</div>
+		</div>
+		<div id="container">
+			<table class="big-cart" cellspacing="0" cellpadding="0">
+				<tr class="top-shop">
+					<th class="myshop">我的购物车</th>
+				</tr>
+				<tr>
+					<td>
+						<table cellspacing="0" cellpadding="0" class="small-infor">
+							<tr>
+								<td width="60" height="32"><input type="checkbox" id="selectAll"/>全选</td>
+	                            <td width="375" height="32" class="shop-name">商品名称</td>
+	                            <td width="100" align="center">单价</td>
+	                            <td width="70" align="center">数量</td>
+	                            <td width="96" align="center">小计</td>
+	                            <td width="80" align="center">操作</td>
+							</tr>
+							<tr class="shopall">
+								<td><input type="checkbox" class="ck"/></td>
+								<td class="shop-name">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td><img src="../img/shoppcar/1.jpg" alt=""/></td>
+											<td><a href="#">WNL 万年利 家用磨刀器 磨刀石 磨刀棒 大号</a></td>
+										</tr>
+									</table>
+								</td>
+								<td id="unitcost">19.00</td>
+								<td class="number">
+									<div class="count left"><span id="count">1</span></div>
+									<div class="count-sign left">
+										<em class="sign" data-number="1">+</em>
+									    <em class="sign" data-number="-1">-</em>
+									</div>
+									<div class="limit">限购200</div>
+								</td>
+								<td class="total" id="total">￥19.00</td>
+								<td class="other">
+									<p class="del">删除</p>
+									<p>移入收藏夹</p>
+								</td>
+							</tr>
+							<tr class="shopall">
+								<td><input type="checkbox" class="ck"/></td>
+								<td class="shop-name">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td><img src="../img/shoppcar/2.jpg" alt=""/></td>
+											<td><a href="#">Apple iPad mini 4 平板电脑 7.9英寸 128G WLAN MK9Q2CH 金色 [ 存储容量：128GB | 颜色：金色 ]</a></td>
+										</tr>
+									</table>
+								</td>
+								<td id="unitcost">2888.00</td>
+								<td class="number">
+									<div class="count left"><span id="count">1</span></div>
+									<div class="count-sign left">
+										<em class="sign" data-number="1">+</em>
+									    <em class="sign" data-number="-1">-</em>
+									</div>
+									<div class="limit">限购200</div>
+								</td>
+								<td class="total" id="total">￥2888.00</td>
+								<td class="other">
+									<p class="del">删除</p>
+									<p>移入收藏夹</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		    <div id="allshop">
+		    	<p>购物车结算</p>
+		    	<div class="priceall">
+		    		<em>共&ensp;&ensp;&ensp;&ensp;&ensp;<span id="countall" style="color: #f60;">0</span>&ensp;&ensp;&ensp;&ensp;&ensp;件商品</em>
+		    	</div>
+		    	<div class="priceall">
+		    		<em>合计：</em>
+		    		<em class="strongfont" id="moneyall">￥0.00</em>
+		    	</div>
+		    	<a href="#" class="now">立刻结账</a>
+		    	<div class="other">
+		    		<a href="../index.html">继续购物>>&ensp;</a>
+		    		<a href="../index.html">凑单推荐>></a>
+		    	</div>
+		    </div>
+		</div>
+	    <div id="footer">
+	    	<p>
+	    		新蛋集团网站：<a href="">美国新蛋</a>
+	    		<a href="">中国新蛋</a>
+	    		<a href="">加拿大新蛋</a>
+	    		<a href="">新蛋软件</a>
+	    	</p>
+	    	<p>
+              <span>&copy; 2001-2018</span> 
+              <span>新蛋商贸（上海）有限公司</span> 
+              <span>版权所有</span> 
+              <span>
+              	<a href="http://www.miibeian.gov.cn/" title="上海市互联网准入证书" target="_blank" ref="noBlank">沪ICP备:16033615</a>
+              </span>
+           </p>
+	    </div>
+	</body>
+</html>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script>
+	//结算
+	function jiesuan(){
+		var countSum=0;
+		var priceSum=0;
+		$("#countall").html(countSum);
+		$("#moneyall").html(priceSum);
+		$(".ck:checked").each(function(){
+			var money=parseInt($(this).parent().parent().find("#unitcost").html())*parseInt($(this).parent().parent().find("#count").html());
+			countSum+=parseInt( $(this).parent().parent().find("#count").html() );
+			priceSum+=parseInt( money );
+		})
+			$("#countall").html(countSum);
+			$("#moneyall").html("￥"+priceSum+".00");
+	}
+	$(".ck").click(function(){
+		jiesuan();
+	})
+	//全选
+	$("#selectAll").click(function(){
+		$(".ck").prop( "checked", $(this).prop("checked") );
+		jiesuan();
+	})
+	//加减操作
+	$(".sign").click(function(){
+		var sign=$(this).data("number");
+		var count=parseInt( $(this).parent().parent().find("#count").html() ); 
+		if(count==1 && sign==-1){
+			return;
+		}
+		sign==1 ? count++ :count--;
+		$(this).parent().parent().find("#count").html(count);
+		var smallPrice=count*parseInt( $(this).parent().parent().prev().html() );
+		$(this).parent().parent().next().html("￥"+smallPrice+".00");
+		jiesuan();
+	})
+	//删除
+	$(".del").click(function(){
+		$(this).parent().parent().remove();
+	})
+</script>

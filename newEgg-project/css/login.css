@@ -93,3 +93,8 @@
 	padding-left: 20px;
 	background: url(../img/loginimg/logo.gif) no-repeat;
 }
+#pname:focus,
+#pwd:focus{
+	outline: 1px solid #f60;
+	border: none;
+}

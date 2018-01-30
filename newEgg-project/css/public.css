@@ -74,6 +74,28 @@ fieldset{
 #topbar .infor ul li a{
 	color: #666666;
 }
+#topbar .infor ul li.myegg{
+	position: relative;
+}
+#topbar .infor ul li.myegg .logintip{
+	position: absolute;
+    right: -18px;
+    top: 23px;
+	padding: 5px 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    z-index: 50;
+    width: 120px;
+    display: none;
+}
+#topbar #oper{
+	color: #003399;
+}
+#topbar #oper:hover{
+	text-decoration: underline;
+}
 #topbar .infor ul li.f{
 	margin-right:50px;
 }
@@ -97,7 +119,7 @@ fieldset{
 	background-color: #fff;
 	border: 1px solid #eee;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
-	z-index: 1000;
+	z-index: 50;
 	display: none;
 }
 #topbar ul li.f #inner .info{
@@ -322,8 +344,46 @@ fieldset{
 	line-height: 40px;
 	display: flex;
 	justify-content: space-around;
+	cursor: pointer;
 }
 .shop-buy span{
+}
+.shop-buy .shop{
+	position: relative;
+}
+.shop-buy .shop .cartContainter{
+	position: absolute;
+	background: #fff;
+	z-index: 50;
+	width: 230px;
+	height: 80px;
+	color: #ccc;
+	font-size: 12px;
+	border: 2px solid #f60;
+	line-height: 80px;
+	display: none;
+}
+.shop-buy .shop .buycart{
+	left:-20px;
+	top: 40px;
+}
+.shop-buy .shop .collect-shop{
+	right: -20px;
+	top: 40px;
+}
+.shop-buy .shop .collect-shop a{
+	display: inline-block;
+	width:46px ;
+	height: 25px;
+	background: #f60;
+	color: #fff;
+	line-height: 25px;
+	vertical-align: middle;
+}
+.shop-buy .shop .cartContainter .empty-cart{
+    vertical-align: middle;
+    padding-left:25px ;    
+	background: url(../img/firstpage/sprite_v140425.png) no-repeat left -1082px;
 }
 .shop-buy span i{
 	margin-left: 15px;

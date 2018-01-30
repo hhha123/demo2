@@ -1,0 +1,208 @@
+/*header-wrapper----------------------------------------------------*/
+#header-wrapper{
+	width: 100%;
+	height: 136px;
+	padding-top: 30px;
+    padding-bottom: 30px;
+    background:#fff;
+    border-bottom:1px solid #ededed ;
+    position: relative;
+}
+#header-wrapper .header{
+	width: 980px;
+	height: 76px;
+    margin: auto;
+    padding-top: 5px;
+    color: #808080!important;
+}
+.header .logo{
+	display: block;
+	width: 318px;
+    height: 65px;
+    background: url(../img/shoppcar/logo.png) no-repeat;
+}
+.header .infor span,
+.header .infor a{
+	display: block;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+	padding-right: 5px;
+}
+.header .infor p{
+	line-height: 40px;
+	text-align: right!important;
+}
+.header .infor p em{
+	color: #1c45a9;
+}
+.header .infor p em:hover{
+	color: #f60;
+	cursor: pointer;
+}
+#header-wrapper .step{
+	width: 711px;
+	height: 60px;
+	position: absolute;
+	left: 50%;
+    top: 122px;
+	margin-left: -357px;
+	z-index: 10;
+}
+.step .stepmark{
+	float: left;
+	width: 237px;
+	height: 54px;
+	text-align: center;
+}
+.step .stepmark span{
+	display: block;
+    vertical-align: middle;
+    height: 19px;
+    width: 28px;
+    margin: 5px auto 12px auto;
+}
+.step .step-light{
+	background: url(../img/shoppcar/step.jpg) no-repeat;
+}
+.step .step-gray{
+	background: url(../img/shoppcar/step.jpg) no-repeat 0 -20px;
+}
+/*containser-----------------------------------------------*/
+#container{
+	width: 960px;
+	height: 300px;
+	margin: 80px auto;
+	position: relative;
+}
+#container table.big-cart{
+	width: 800px;
+	border-collapse: collapse;
+	border: 1px solid #bfbfbf;
+	cursor: default;
+}
+.big-cart .top-shop{
+	font-size: 14px;
+	line-height: 35px;
+}
+.big-cart .top-shop .myshop{
+	border: 1px solid #bfbfbf;
+	width: 782px;
+	text-align: left;
+	padding-left: 15px;
+}
+.big-cart .small-infor td{
+	text-align: center;
+	border-bottom:1px solid #bfbfbf ;
+}
+.small-infor .shopall{
+	height: 100px;
+}
+.small-infor td.shop-name{
+	text-align: left;
+}
+.small-infor td.shop-name td{
+	border: none;
+}
+.small-infor td.shop-name a{
+	display: inline-block;
+}
+.small-infor td.shop-name a:hover{
+	color: #f60;
+}
+.small-infor td.number{
+	cursor: pointer;
+}
+.small-infor td.number span{
+	display: inline-block;
+	width: 38px;
+	height: 26px;
+	border: 1px solid #bbbbbb;
+	text-align: center;
+	line-height: 26px;
+	margin-top: 3px;
+}
+.small-infor td.number .count-sign{
+	width: 13px;
+}
+.small-infor td.number .sign{
+	display: inline-block;
+	width: 13px;
+	height: 11px;
+	border: 1px solid #bbbbbb;
+	text-align: center;
+	line-height: 7px;
+	margin-left: 5px;
+}
+.small-infor td.number .limit{
+	width:65px ;
+	height:16px ;
+	background: #666666;
+	color: #fff;
+	clear: left;
+}
+.small-infor .total{
+	color: #f60;
+}
+.small-infor .other p:hover{
+	color: #f60;
+	cursor: pointer;
+}
+#allshop{
+	width: 160px;
+	height:270px ;
+	position: absolute;
+	right: 0;
+	top:0;
+	border: 1px solid #bfbfbf;
+	border-left: none;
+	background: #ffffcc;
+}
+#allshop p{
+	height: 36px;
+	line-height: 36px;
+	padding-left: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid #bfbfbf;
+}
+#allshop .priceall{
+	line-height: 40px;
+	padding-left:15px;
+}
+#allshop .money{
+	margin-top:30px;
+}
+#allshop .strongfont{
+	font-weight:bold ;
+	color: #f60;
+	padding-left: 30px;
+}
+#allshop a.now{
+	display: block;
+	width:134px ;
+	height:45px ;
+	color: #fff;
+	background: #f60;
+	margin: 0 auto;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 45px;
+	text-align: center;
+}
+#allshop .other{
+	padding:20px 0 0 15px;
+}
+#allshop .other a:hover{
+	color: #f60;
+}
+/*footer----------------------------------------------------*/
+#footer{
+	height: 140px;
+}
+#footer p{
+	text-align: center;
+	padding-bottom: 20px;
+}
+#footer p a{
+	margin-left: 10px;
+}

@@ -13,15 +13,20 @@
 				<li><a href="javascript:;" target="_blank" class="bizGroupBuy">企业团购</a></li>
 			</ul>
 			<div class="infor right">
-				<span class="user">
+				<span class="user" id="userinfo">
 					<a href="html/register.html" target="_blank">注册</a>
-					<b>|</b>
+					<b>&ensp;|&ensp;</b>
 					<a href="html/login.html" target="_blank">登录</a>
 				</span>
-				<span>晚上好，欢迎来新蛋购物！</span>
+				<span id="nowtime">晚上好</span>，欢迎来新蛋购物！
 				<ul class="right">
 					<li><a href="javascript:;" target="_blank">我的订单</a></li>
-					<li><a href="javascript:;" target="_blank">我的新蛋<i class="iconfont">&#xe648;</i></a></li>
+					<li class="myegg" id="myegg-new">
+						<a href="javascript:;" target="_blank">我的新蛋<i class="iconfont">&#xe648;</i></a>
+						<div class="logintip" id="please-login">
+							请&ensp;<a href="html/login.html" id="oper">登录</a>&ensp;后查看
+						</div>
+					</li>
 					<li><a href="javascript:;" target="_blank" class="p">帮助中心</a></li>
 					<li class="f"><a href="javascript:;" target="_blank">客户服务<i class="iconfont">&#xe648;</i></a>
 						<div id="inner">
@@ -67,8 +72,19 @@
 			    <li><a href="javascript:;" title="二手宝库" target="_blank">二手宝库</a></li>
            </ul>
            <div class="shop-buy right">
-           	   <span>购物车<i class="iconfont">&#xe6b5;</i></span>
-           	   <span>收藏提醒<i class="iconfont">&#xe6b5;</i></span>
+           	   <div class="shop" id="shop">
+	           	   <span>购物车<i class="iconfont">&#xe6b5;</i></span>
+	           	   <div class="cartContainter buycart" id="buycart">
+	           	   	    <em class="empty-cart">您还没有购买商品，快去挑选吧！</em>
+	           	   </div>
+           	   </div>
+           	   <div class="shop collect" id="collect">
+           	       <span>收藏提醒<i class="iconfont">&#xe6b5;</i></span>
+           	       <div class="cartContainter collect-shop" id="collect-shop">
+           	       	   <em>请登录后查看</em>
+           	       	   <a href="html/login.html">登录</a>
+           	       </div>
+           	   </div>
            </div>
            <h3><a href="javascript:;" title="全部商品分类">全部商品分类</a><i class="iconfont">&#xe648;</i></h3>
            <ul class="menu-nav-list">
@@ -207,7 +223,7 @@
 	       	    <li>
 	           		<dl>
 	           			<dt>
-	           				<h4><i  class="iconfont">&#xe640;</i><a href="javascript:;" target="_blank" style="color: #000;font-weight: bold;">手机 摄影 苹果<b id="gt">></b></a></h4>
+	           				<h4><i  class="iconfont">&#xe68b;</i><a href="javascript:;" target="_blank" style="color: #000;font-weight: bold;">手机 摄影 苹果<b id="gt">></b></a></h4>
 	           				<div class="se-nav">
 	           					<a href="javascript:;" target="_blank" class="first">智能手机</a>
 	           					<a href="javascript:;" target="_blank">微单</a>
@@ -1119,6 +1135,7 @@
 		</div>
 	</body>
 </html>
+<script src="js/cookie.js"></script>
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/public.js"></script>
 <script src="js/index.js"></script>

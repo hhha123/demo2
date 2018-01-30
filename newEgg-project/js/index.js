@@ -8,18 +8,51 @@ $(".menu-nav-list li:not(.lastLi)").mouseenter(function(){
 	$(this).find("dd").css({"display":"none","border-left":"1px solid #ccc"});
 })
 //topbar移入移出------------------------------------------------
-function topbar(){
-	$("#topbar .infor ul li.f").mouseenter(function(){
+function topbar(id,sign){
+	$(id).mouseenter(function(){
 		$(this).find("i").css("background","#fff");
 		$(this).css("background","#fff");
-		$(this).find("#inner").show(1000);
+		$(this).find(sign).show(100);
 	}).mouseleave(function(){
 		$(this).css("background","");
 		$(this).find("i").css("background","");
-		$(this).find("#inner").hide(1000);
+		$(this).find(sign).hide(100);
 	})
 }
-topbar();
+topbar("#topbar .infor ul li.f","#inner");
+topbar("#myegg-new","#please-login");
+//menu右边购物车--------------------------------------------------
+function menuRight(id,sign){
+	$(id).mouseenter(function(){
+		$(this).css({"color":"#000"});
+		$(this).find(sign).css("border-top","none");
+		$(this).find(sign).show(100);
+	}).mouseleave(function(){
+		$(this).css({"color":"#fff"});
+		$(this).find(sign).hide(100);
+	})
+}
+menuRight("#shop","#buycart");
+menuRight("#collect","#collect-shop");
+//topbar现在时间算是上午好或者下午好(5-8)(9-11)(12)(13-18)(19-24)-------
+function nowTime(){
+	var d=new Date();
+	var hour=d.getHours();
+	if(hour<5){
+		$("#nowtime").html("凌晨好");
+	}else if(hour>=5 && hour<=8){
+		$("#nowtime").html("早上好");
+	}else if(hour>=9 && hour<=11){
+		$("#nowtime").html("上午好");
+	}else if(hour == 12){
+		$("#nowtime").html("中午好");
+	}else if(hour>=13 && hour<=18){
+		$("#nowtime").html("下午好");
+	}else{
+		$("#nowtime").html("晚上好");
+	}
+}
+nowTime();
 //wrap时间倒计时----------------------------------------------------
 function time(){
 	    var start=new Date();
@@ -201,11 +234,11 @@ function wrapSix(){
 	$("#wrap .wrap-thirdBox-con li").each(function(index,ele){
 		$(this).css("background-image","url(img/firstpage/thirdBox1_0"+(index+1)+".jpg)");
 	}).mouseenter(function(){
-		$(this).stop().animate({width:674},200)
+		$(this).stop().animate({width:674},500)
 		       .siblings()
-		       .stop().animate({width:172},200)
+		       .stop().animate({width:172},500)
 	}).mouseleave(function(){
-		$("this").stop().animate({width:172},200)
+		$("this").stop().animate({width:172},500)
 	})
 }
 wrapSix();
@@ -283,6 +316,7 @@ function wrapTen(){
 }
 wrapTen();
 //搜索框   跨域请求数据
+function search(){
     var oTxt=document.getElementById("txt");
 	var oUl=document.getElementById("search-text");
 	oTxt.onkeyup=function(){
@@ -298,3 +332,8 @@ wrapTen();
 		}
 		oUl.innerHTML=str;
 	}
+}
+search();
+//取出用户名
+var username=getCookie("uname");
+$("#userinfo").html(username);
