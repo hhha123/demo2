@@ -12,7 +12,7 @@
 				<div class="logo left"></div>
 				<div class="infor right">
 					<span class="username left">注册&ensp; | &ensp;登录</span>
-					<span class="left">&ensp;&ensp;下午好,欢迎来新蛋购物！</span>
+					&ensp;&ensp;<span class="left" id="nowtime">下午好,欢迎来新蛋购物！</span>
 					<a href="#" class="left quit">安全退出</a>
 					<img src="../img/shoppcar/contact.jpg" alt="" class="left"/>
 					<p>江浙沪部分地区79元包邮，全国部分地区199元包邮。<em>查看详情</em></p>
@@ -139,6 +139,25 @@
 </html>
 <script src="../js/jquery-1.11.1.min.js"></script>
 <script>
+//时间----------------------------------------------------
+function nowTime(){
+	var d=new Date();
+	var hour=d.getHours();
+	if(hour<5){
+		$("#nowtime").html("凌晨好,欢迎来新蛋购物！");
+	}else if(hour>=5 && hour<=8){
+		$("#nowtime").html("早上好,欢迎来新蛋购物！");
+	}else if(hour>=9 && hour<=11){
+		$("#nowtime").html("上午好,欢迎来新蛋购物！");
+	}else if(hour == 12){
+		$("#nowtime").html("中午好,欢迎来新蛋购物！");
+	}else if(hour>=13 && hour<=18){
+		$("#nowtime").html("下午好,欢迎来新蛋购物！");
+	}else{
+		$("#nowtime").html("晚上好,欢迎来新蛋购物！");
+	}
+}
+nowTime();
 	//结算
 	function jiesuan(){
 		var countSum=0;
