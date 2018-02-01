@@ -237,8 +237,6 @@ function wrapSix(){
 		$(this).stop().animate({width:674},500)
 		       .siblings()
 		       .stop().animate({width:172},500)
-	}).mouseleave(function(){
-		$("this").stop().animate({width:172},500)
 	})
 }
 wrapSix();
@@ -305,16 +303,17 @@ function wrapNine(id){
 wrapNine("#content-wrap .content-top .con-sports ");
 wrapNine("#fiveBox-left .content-top .con-sports ");
 //wrap选项卡10-----------------------------------------------------------
-function wrapTen(){
-	$("#wrap .fourBox-right p a").mouseenter(function(){
+function wrapTen(id){
+	$(id+" p a").mouseenter(function(){
 		$(this).addClass("active").siblings().removeClass("active");
 		var index=$(this).index();
-		$("#wrap .fourBox-right .tab-shoplist").eq(index).addClass("current")
+		$(id+" .tab-shoplist").eq(index).addClass("current")
 		                                  .siblings()
 		                                  .removeClass("current");
     })
 }
-wrapTen();
+wrapTen("#content-wrap");
+wrapTen("#fiveBox-left");
 //搜索框   跨域请求数据
 function search(){
     var oTxt=document.getElementById("txt");
